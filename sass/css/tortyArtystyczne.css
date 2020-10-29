@@ -1,0 +1,69 @@
+.decoration-photo--torty-artystyczne {
+  height: 30vh;
+  background-image: url("../../images/cake-decor.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sectios-photos__single-photo {
+  margin: 2rem;
+  width: 26rem;
+  height: 31rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sectios-photos__single-photo > img {
+  width: 100%;
+  height: 31rem;
+}
+
+.sectios-photos__single-photo:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.flavours {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.flavours-description {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.flavours__list {
+  font-size: 2.1rem;
+  border: 1px dotted #c6c6c6;
+  width: 100%;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.flavours__list span {
+  font-size: 4rem;
+}
+
+.flavours__list ul li {
+  list-style: circle;
+}
+
+.flavours__list ul {
+  padding: 1rem 0 1rem 2rem;
+}
+
+table, th, td {
+  border: 1px solid #c6c6c6;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*# sourceMappingURL=tortyArtystyczne.css.map */

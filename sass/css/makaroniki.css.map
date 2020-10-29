@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,4BAA4B,CAAC;EAC1B,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,mCAAmC;EACrD,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;CAC5B",
+    "sources": [
+        "../pages/makaroniki.scss"
+    ],
+    "names": [],
+    "file": "makaroniki.css"
+}

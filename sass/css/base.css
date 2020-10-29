@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.active-link {
+  border-bottom: 1.5px solid #000000;
+  font-weight: bold;
+}
+
+.sub-pages-title-box {
+  margin: 8rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sub-pages-title-box h1, .sub-pages-title-box h2 {
+  display: inline-block;
+  font-weight: normal;
+}
+/*# sourceMappingURL=base.css.map */

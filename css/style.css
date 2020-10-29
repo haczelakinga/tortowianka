@@ -1,0 +1,487 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  background-color: white; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+.active-link {
+  border-bottom: 1.5px solid #000000;
+  font-weight: bold; }
+
+.sub-pages-title-box {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: 2rem; }
+  .sub-pages-title-box h1, .sub-pages-title-box h2 {
+    display: inline-block;
+    font-weight: normal; }
+
+.decoration-photo {
+  height: 30vh;
+  background-size: cover;
+  background-position: center; }
+
+.section-photos {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.sectios-photos__single-photo {
+  margin: 2rem;
+  width: 26rem;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s; }
+  .sectios-photos__single-photo > img {
+    width: 100%;
+    height: 31rem; }
+
+.sectios-photos__single-photo:hover {
+  transform: scale(1.02); }
+
+.comeback-arrow {
+  position: absolute;
+  left: 15%;
+  font-size: 6rem;
+  cursor: pointer; }
+
+#cookie-bar p {
+  background-color: #e6e6e6;
+  opacity: 0.8;
+  font-size: 2rem;
+  line-height: 24px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  margin: auto; }
+  #cookie-bar p .cb-enable {
+    background-color: #d9b5b9; }
+  #cookie-bar p a {
+    color: white;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 6px 6px;
+    margin-left: 20px; }
+
+.padding-lr--medium {
+  padding: 0 30px; }
+
+.padding-lr--small {
+  padding: 0 5px; }
+
+.font-size--medium {
+  font-size: 4em; }
+
+.standard-flexbox {
+  display: flex;
+  justify-content: center; }
+
+.max-w-padding-lr {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px; }
+
+.hero-header {
+  height: 100vh;
+  background-image: url("../images/hero-header-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 8rem; }
+
+.hero-header__text {
+  font-size: 8rem;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  z-index: 1; }
+  .hero-header__text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+@media (max-width: 414px) {
+  .hero-header__text {
+    font-size: 6rem;
+    letter-spacing: 3px; } }
+
+footer {
+  padding-top: 2rem;
+  margin-top: 8rem;
+  background-color: #393939;
+  font-size: 1.6rem;
+  color: #ffff;
+  letter-spacing: 1px; }
+
+.footer {
+  display: flex;
+  justify-content: space-around; }
+
+.footer__social-media-box > a {
+  color: #ffff;
+  font-size: 4rem;
+  padding: 0 .7rem; }
+
+.footer__copyrights {
+  padding: .5rem 0;
+  background-color: #000000;
+  margin-top: 2rem;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center; }
+    .footer > div {
+      padding: 1rem;
+      text-align: center; } }
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem; }
+
+.logo {
+  width: 12rem;
+  padding: .5rem; }
+
+.nav__items {
+  display: flex;
+  margin-left: auto;
+  letter-spacing: .8px; }
+
+.burger {
+  display: none;
+  margin-left: auto;
+  margin-right: 25px;
+  cursor: pointer; }
+
+.burger div {
+  width: 35px;
+  height: 6px;
+  background-color: black;
+  margin: 5px;
+  transition: all .3s ease; }
+
+.nav__items li {
+  padding: 0 1.5rem;
+  cursor: pointer; }
+  .nav__items li a {
+    padding: 0 2px; }
+    .nav__items li a:hover {
+      border-bottom: 1.5px solid #000000; }
+
+.nav__social-media-box {
+  margin: 0 20px 0 40px; }
+
+.nav__social-media-box span {
+  margin: 0 .5rem;
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .nav ul {
+    padding-top: 10%; }
+  .nav__items {
+    position: absolute;
+    left: -100%;
+    top: 1px;
+    height: 100vh;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: .5s ease-in;
+    z-index: 100; }
+  .nav__items li {
+    opacity: 0;
+    font-size: 3rem;
+    margin: 2rem 2rem; }
+  .burger {
+    display: block;
+    z-index: 100; } }
+
+.nav-active {
+  transform: translateX(100%); }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.toggle .burger__line--1 {
+  transform: rotate(-45deg) translate(-7px, 8px); }
+
+.toggle .burger__line--2 {
+  opacity: 0; }
+
+.toggle .burger__line--3 {
+  transform: rotate(45deg) translate(-7px, -8px); }
+
+.nav-pages {
+  background-color: #e6e8ef; }
+
+.decoration-photo--offer {
+  background-image: url("../images/decor-cupcakes.jpg"); }
+
+.photo-box {
+  margin: 2rem;
+  width: 30rem;
+  height: 35rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s; }
+  .photo-box > img {
+    width: 100%;
+    max-height: 300px; }
+
+.photo-box:hover {
+  transform: scale(1.02); }
+
+.photo-description {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 10px; }
+
+.section-products {
+  display: flex; }
+
+.photo-products {
+  min-width: 38rem;
+  height: 38rem;
+  background-image: url("../images/naturalne-skladniki.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+  margin: 0 2rem; }
+
+.products-description {
+  font-size: 2em;
+  text-align: center; }
+  .products-description h1 {
+    text-align: center;
+    padding: 2rem 0; }
+  .products-description a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2em; }
+
+.decoration-photo--home {
+  background-image: url("../images/decor-macaroons-light.jpg");
+  background-position: center;
+  margin: 8rem 0; }
+
+.section-offer {
+  display: flex; }
+
+.photos-offer {
+  order: 2; }
+  .photos-offer > img {
+    width: 18rem;
+    height: 18rem;
+    margin: 1.5px;
+    border-radius: 2px; }
+
+.offer-description {
+  font-size: 2em;
+  margin: 0 2rem; }
+  .offer-description h2 {
+    text-align: center;
+    padding: 2rem 0; }
+  .offer-description a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2em; }
+  .offer-description ul li {
+    margin-left: 1em;
+    list-style-type: circle; }
+
+@media (max-width: 1024px) {
+  .section-offer {
+    flex-direction: column;
+    align-items: center; }
+  .photos-offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .offer-description {
+    margin-bottom: 3rem; } }
+
+@media (max-width: 768px) {
+  .section-products {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; } }
+
+@media (max-width: 414px) {
+  .photo-products {
+    min-width: 30rem;
+    height: 30rem; }
+  .photos-offer > img {
+    width: 12rem;
+    height: 12rem; } }
+
+.about-me__decoration-photo {
+  height: 30vh;
+  background-image: url("../images/decor-cupcake.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.about-me {
+  display: flex;
+  justify-content: space-between; }
+
+.about-me-photo {
+  width: 400px;
+  margin-right: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.about-me-description {
+  font-size: 2em;
+  text-align: center;
+  align-self: center; }
+
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column; }
+    .about-me div {
+      align-self: center; }
+  .about-me-photo {
+    width: 300px;
+    align-self: center;
+    margin: 0 0 2rem 0; } }
+
+.decoration-photo--contact {
+  background-image: url("../images/pink-macaroons-decor.jpg"); }
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem; }
+  .contact span {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%); }
+  .contact p {
+    font-size: 2em; }
+
+.map iframe {
+  width: 100%; }
+
+@media (max-width: 784px) {
+  .contact {
+    margin: 0 5rem 8rem 5rem; } }
+
+@media (max-width: 650px) {
+  .contact {
+    flex-direction: column; }
+    .contact > div {
+      margin: 1.5rem 0; }
+    .contact > div > p {
+      text-align: center; } }
+
+.decoration-photo--torty-artystyczne {
+  height: 30vh;
+  background-image: url("../images/cake-decor.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.flavours {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.price-description {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  letter-spacing: .8px;
+  max-width: 1200px; }
+  .price-description a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 2.7rem; }
+
+.flavours-description {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  letter-spacing: .8px;
+  max-width: 1200px; }
+
+.flavours__list {
+  font-size: 2.1rem;
+  border: 1px dotted #c6c6c6;
+  width: 36rem;
+  margin: 1rem auto;
+  padding: 1rem; }
+  .flavours__list span {
+    font-size: 4rem; }
+  .flavours__list ul li {
+    list-style: circle; }
+  .flavours__list ul {
+    padding: 1rem 0 1rem 2rem; }
+
+@media (max-width: 414px) {
+  .sub-pages-title-box > h1 {
+    font-size: 3.3rem; }
+  .flavours {
+    flex-direction: column;
+    align-items: center; }
+  .flavours__list > span {
+    display: block;
+    text-align: center; } }
+
+.decoration-photo--torty-slubne {
+  background-image: url("../images/decor-cupcakes.jpg"); }
+
+.coming-soon-info p {
+  text-align: center;
+  font-size: 2em; }
+
+.decoration-photo--makaroniki {
+  background-image: url("../images/decor-macaroons.jpg"); }
+
+.decoration-photo--babeczki {
+  background-image: url("../images/decor-muffins.jpg"); }
+
+.decoration-photo--monoporcje {
+  height: 30vh;
+  background-image: url("../images/decor-cupcakes.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.decoration-photo--praliny {
+  background-image: url("../images/decor-cupcakes.jpg"); }

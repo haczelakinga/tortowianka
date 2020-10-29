@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.active-link {
+  border-bottom: 1.5px solid #000000;
+  font-weight: bold;
+}
+
+.sub-pages-title-box {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: 2rem;
+
+
+  & h1, h2 {
+    display: inline-block;
+    font-weight: normal;
+  }
+}
+
+.decoration-photo {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-photos {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sectios-photos__single-photo {
+  margin: 2rem;
+  width: 26rem;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s;
+
+  & > img {
+    width: 100%;
+    height: 31rem;
+  }
+}
+
+.sectios-photos__single-photo:hover {
+  transform: scale(1.02);
+}
+
+.comeback-arrow {
+  position: absolute;
+  left: 15%;
+  font-size: 6rem;
+  cursor: pointer;
+}
+
+#cookie-bar p {
+  background-color: rgb(230, 230, 230);
+  opacity: 0.8;
+  font-size: 2rem;
+  line-height: 24px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+
+  & .cb-enable {
+    background-color: #d9b5b9;
+  }
+
+  & a {
+    color: white;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 6px 6px;
+    margin-left: 20px;
+  }
+}

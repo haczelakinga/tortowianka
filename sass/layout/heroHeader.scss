@@ -1,0 +1,35 @@
+.hero-header {
+  height: 100vh;
+  background-image: url("../images/hero-header-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.hero-header__text {
+  font-size: 8rem;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  z-index: 1;
+
+  &-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 414px) {
+  .hero-header__text {
+    font-size: 6rem;
+    letter-spacing: 3px;
+  }
+}
+
+
+
+

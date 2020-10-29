@@ -1,0 +1,38 @@
+footer {
+  padding-top: 2rem;
+  margin-top: 8rem;
+  background-color: rgb(57, 57, 57);
+  font-size: 1.6rem;
+  color: $color-white;
+  letter-spacing: 1px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__social-media-box > a {
+  color: $color-white;
+  font-size: 4rem;
+  padding: 0 .7rem;
+}
+
+.footer__copyrights {
+  padding: .5rem 0;
+  background-color: $color-black;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media(max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.decoration-photo--contact {
+  background-image: url("../images/pink-macaroons-decor.jpg");
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+
+  & span {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  & p {
+    font-size: $medium-font-size;
+  }
+}
+
+.map iframe {
+  width: 100%;
+}
+
+@media (max-width: 784px) {
+
+  .contact {
+    margin: 0 5rem 8rem 5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+
+    & > div {
+      margin: 1.5rem 0;
+    }
+
+    & > div > p {
+      text-align: center;
+
+    }
+  }
+}

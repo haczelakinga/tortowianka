@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kCAAkC,CAAC;EACjC,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,mCAAmC;EACrD,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;CAC5B",
+    "sources": [
+        "../pages/monoporcje.scss"
+    ],
+    "names": [],
+    "file": "monoporcje.css"
+}

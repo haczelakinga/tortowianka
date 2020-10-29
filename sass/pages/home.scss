@@ -1,0 +1,109 @@
+.section-products {
+  display: flex;
+}
+
+.photo-products {
+  min-width: 38rem;
+  height: 38rem;
+  background-image: url("../images/naturalne-skladniki.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+  margin: 0 2rem;
+}
+
+.products-description {
+  font-size: $medium-font-size;
+  text-align: center;
+
+  & h1 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  & a {
+    color: $color-black;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+
+.decoration-photo--home {
+  background-image: url("../images/decor-macaroons-light.jpg");
+  background-position: center;
+  margin: 8rem 0;
+}
+
+.section-offer {
+  display: flex;
+}
+
+.photos-offer {
+  order: 2;
+
+  & > img {
+    width: 18rem;
+    height: 18rem;
+    margin: 1.5px;
+    border-radius: 2px;
+  }
+}
+
+.offer-description {
+  font-size: $medium-font-size;
+  margin: 0 2rem;
+
+  & h2 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  & a {
+    color: $color-black;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  & ul li {
+    margin-left: 1em;
+    list-style-type: circle;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-offer {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .photos-offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .offer-description {
+    margin-bottom: 3rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .section-products {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  }
+}
+
+@media(max-width: 414px) {
+  .photo-products {
+    min-width: 30rem;
+    height: 30rem;
+  }
+  .photos-offer > img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+
